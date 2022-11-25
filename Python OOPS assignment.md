@@ -69,3 +69,94 @@ A very popular and convenient example is the Addition (+) operator. Just think h
 ### Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
 
 Both inheritance and polymorphism are key ingredients for designing robust, flexible, and easy-to-maintain software. These concepts are best explained via examples. Let's start with creating a simple class.
+
+### Q18. Describe three applications for exception processing.
+
+Try and except statements are used to catch and handle exceptions in Python. Statements that can raise exceptions are kept inside the try clause and the statements that handle the exception are written inside except clause.
+
+Example: Let us try to access the array element whose index is out of bound and handle the corresponding exception.
+# Python program to handle simple runtime error
+#Python 3
+
+{a = [1, 2, 3]
+try:
+	print ("Second element = %d" %(a[1]))
+
+	# Throws error since there are only 3 elements in array
+	print ("Fourth element = %d" %(a[3]))
+
+except:
+	print ("An error occurred")}
+  
+### Q19. What happens if you don't do something extra to treat an exception?
+
+if you don't handle exceptions, When an exception occurred, if you don't handle it, the program terminates abruptly and the code past the line that caused the exception will not get executed.
+
+### Q20. What are your options for recovering from an exception in your script?
+
+You can also provide a generic except clause, which handles any exception. After the except clause(s), you can include an else-clause. The code in the else-block executes if the code in the try: block does not raise an exception. The else-block is a good place for code that does not need the try: block's protection.
+
+### Q21. Describe two methods for triggering exceptions in your script.
+
+To avoid such a scenario, there are two methods to handle Python exceptions:
+* Try – This method catches the exceptions raised by the program.
+* Raise – Triggers an exception manually using custom exceptions.
+
+### Q22. Identify two methods for specifying actions to be executed at termination time, regardless of whether or not an exception exists.
+
+The finally Clause
+
+This clause is meant to define clean-up actions that must be performed regardless of whether an exception was raised or not. A finally clause must always be executed before leaving the try/except statement, whether an exception has occurred or not.
+
+### Q23. What is the purpose of the try statement?
+
+The try statement allows you to define a block of code to be tested for errors while it is being executed. The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+### Q24. What are the two most popular try statement variations?
+
+The Different Try/Except Variations. So far we've used a try / except and even a try / except / except , but this is only two-thirds of the story. There are two other optional segments to a try block: else and finally . Both of these optional blocks will come after the try and the except .
+
+### Q25. What is the purpose of the raise statement?
+
+The RAISE statement stops normal execution of a PL/SQL block or subprogram and transfers control to an exception handler. RAISE statements can raise predefined exceptions, such as ZERO_DIVIDE or NO_DATA_FOUND , or user-defined exceptions whose names you decide.
+
+### Q26. What does the assert statement do, and what other statement is it like?
+
+The assert keyword is used when debugging code. The assert keyword lets you test if a condition in your code returns True, if not, the program will raise an AssertionError. You can write a message to be written if the code returns False.
+
+### Q27. What is the purpose of the with/as argument, and what other statement is it like?
+
+The with statement is a replacement for commonly used try/finally error-handling statements. A common example of using the with statement is opening a file. 
+
+### Q28. What are *args, **kwargs?
+
+*args specifies the number of non-keyworded arguments that can be passed and the operations that can be performed on the function in Python whereas **kwargs is a variable number of keyworded arguments that can be passed to a function that can perform dictionary operations.
+
+### Q29. How can I pass optional or keyword parameters from one function to another?
+
+Users can either pass their values or can pretend the function to use theirs default values which are specified. In this way, the user can call the function by either passing those optional parameters or just passing the required parameters. Without using keyword arguments. By using keyword arguments.
+
+### Q30. What are Lambda Functions?
+
+A lambda function is a small anonymous function.
+A lambda function can take any number of arguments, but can only have one expression.
+
+### Q31. Explain Inheritance in Python with an example?
+
+Inheritance relationship defines the classes that inherit from other classes as derived, subclass, or sub-type classes. Base class remains to be the source from which a subclass inherits. For example, you have a Base class of “Animal,” and a “Lion” is a Derived class. The inheritance will be Lion is an Animal.
+
+### Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+
+If both classes A and B have a func() method, and class C inherits from both A and B, then the func() method from class A is invoked when called from an object of class C.
+
+### Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+
+Two built-in functions isinstance() and issubclass() are used to check inheritances. The function isinstance() returns True if the object is an instance of the class or other classes derived from it.
+
+### Q34.Explain the use of the 'nonlocal' keyword in Python.
+
+The nonlocal keyword is used to work with variables inside nested functions, where the variable should not belong to the inner function. Use the keyword nonlocal to declare that the variable is not local.
+
+### Q35. What is the global keyword?
+
+In Python, global keyword allows you to modify the variable outside of the current scope. It is used to create a global variable and make changes to the variable in a local context.
